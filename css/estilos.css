@@ -6,7 +6,7 @@
 
 
 body{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: rgb(27,27,27);
 }
 
@@ -25,7 +25,7 @@ header {
 nav a {
     top: 10px;
     width: 100%;
-    padding-right: 10px;
+    padding-right: 30px;
     color: rgb(87,87,87);
     text-decoration: none;
 }
@@ -44,56 +44,187 @@ nav a:hover{
 }
 
 .contact-button:hover {
-    background-color: rgb(240,158,48);
+    background-color: #e67e22;
 }
-
 .title{
     color: rgb(240,158,48);
-    text-align: center;
 }
 
-.titleleft{
-    color: rgb(240,158,48);
-    text-align: left;
-    padding-left: 90px;
+#hero {
+    display: flex;
+    align-items: center;
+    width: 80%;
+    justify-content: space-between;
+    padding: 40px 0px;
 }
 
-.check{
-    color: #fff;
-    text-align: left;
-    padding: 5rem 0;
-    padding-left: 80px;
-
-}
-main {
-    padding: 70px 0px; 
-    text-align: center;
-}
-.about {
-    max-width: 600px;
-    border-radius: 20px;
-    background: #333;
-    color: #fff;
-    text-align: left;
-    padding: 90px 70px;
+.hero-text {
+    background-color: #292929;
+    border-radius: 0px 300px 300px 0px;
+    padding: 200px 200px;
 }
 
-.talk-button{
+.hero-text h1 {
+    font-size: 80px;
+    color: #fffcfcea;
+    line-height: 1.2;
+}
+
+.hero-text h1 span {
+    font-size: 100px;
+    color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgb(240,158,48);
+}
+
+.hero-text p {
+    color: rgb(187, 185, 185); 
+    font-size: 20px;
+    margin: 20px 0;
+}
+
+.hero-text button {
+    font-weight: bold;
     background-color: rgb(240,158,48);
     color:  rgb(27,27,27);
-    border-color:  rgb(240,158,48);
-    border-radius: 50px; 
-    padding: 10px 30px;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1em;
     cursor: pointer;
+    border-radius: 20px;
+    transition: background-color 0.3s;
 }
+
+.hero-text button:hover {
+    background-color: #e67e22;
+}
+
+.hero-img img {
+    max-width: 80%;
+    border-radius: 10px;
+}
+
+
+
 .checkout{
-    margin: 0 auto; 
+    color: #fff3f3d7;
+    padding: 90px;
     display: flex;
     align-items: center; 
 }
 
-footer {
-    color: #fff;
+.checkout-img{
+    padding: 2px 20px;
+}
+.checkout-img img{
+    background-color: #fff3f3d7;
+    padding: 10px 10px;
+    border-radius: 30px;
+}
+
+#services{
+    font-size: 30px;
+    text-align: left;
+    padding: 30px 90px;
+}
+
+#skillyexp{
+    padding: 20px;
+    font-size: 30px;
     text-align: center;
-    padding: 1rem 0;
+}
+.skills
+{
+    text-align: left;
+    padding: 20px 500px;
+    font-size: 27px;
+}
+
+.experience{
+    text-align: right;
+    padding: 20px 500px;
+    font-size: 27px;
+}
+
+#projects{
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+#testimonial {
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+#testimonial h1{
+    padding: 30px;
+}
+
+footer {
+    background-color: #1a1a1a;
+    padding: 40px 0;
+}
+
+footer h1{
+    font-size: 40px;
+    padding-left: 120px;
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    padding-left: 120px;
+}
+
+.email{
+    margin-bottom: 30px;
+    color: white;
+}
+
+.location{
+    color: white;
+    margin-bottom: 30px;
+}
+
+.right-section {
+    padding-right: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.quick-links, .servicesfo {
+    margin-right: 40px;
+}
+
+.quick-links h3, .servicesfo h3 {
+    color: rgb(240,158,48);
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.quick-links ul, .servicesfo ul {
+    color: white;
+    list-style: none;
+    padding: 0;
+}
+
+.quick-links li, .servicesfo li {
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.footer-bottom {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #333;
+    padding-top: 20px;
+}
+
+.footer-bottom p {
+    padding-left: 10px;
+    margin: 0;
+    font-size: 20px;
 }
