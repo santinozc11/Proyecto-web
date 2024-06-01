@@ -45,9 +45,10 @@ nav a:hover{
     color: rgb(114,114,114); 
     border-color:  rgb(240,158,48);
     border-radius: 50px; 
-    padding: 10px 50px 10px 40px;
+    padding: 10px 30px 10px 30px;
     cursor: pointer;
     margin-right: 50px;
+    font-size: 1.1em;
 }
 
 .contact-button:hover {
@@ -147,34 +148,38 @@ nav a:hover{
     border-radius: 30px;
 }
 
+
 #services {
-    padding: 150px;
     display: flex;
-    gap: 200px;
-    max-width: 2000px;
-    width: 100%;
+    justify-content: space-between;
+    color: white;
+    padding: 100px 120px;
+    align-items: center;
 }
 
-.services-content{
-    left: -20px;
-    border: white;
+.services-content {
+    margin-left: 120px;
+    max-width: 40%;
+    display: flex;
+    flex-direction: column;
 }
 
 .services-content h1 {
-    font-size: 50px;
+    font-size: 70px;
     margin-bottom: 20px;
     color: rgb(240,158,48);
 }
 
 .services-content p {
+    letter-spacing: 0.1em;
     color: rgb(187, 185, 185); 
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     margin-bottom: 10px;
 }
 
 .stats {
     display: flex;
-    gap: 50px;
+    gap: 40px;
     margin-top: 20px;
 }
 
@@ -183,58 +188,60 @@ nav a:hover{
 }
 
 .stats div h3 {
-    font-size: 2rem;
+    font-size: 3rem;
     margin: 0;
-    color: rgb(240,158,48); /* Color del número */
+    color: rgb(240,158,48); 
 }
 
 .stats div p {
-    color: white;
-    font-size: 1rem;
+    color:rgb(187, 185, 185); 
+    font-size: 1.1rem;
     margin: 0;
 }
 
-/* Lista de servicios */
 .services-list {
+    margin-right: 120px;
     display: flex;
     flex-direction: column;
-    gap: 20px;
-    width: 100%;
 }
 
 .service-item {
+    position: relative;
+    border: 0.5px solid #ffffff81;
     display: flex;
     align-items: center;
-    padding: 20px;
-    border-radius: 10px;
+    padding: 40px 80px;
     transition: transform 0.3s;
 }
 
 .service-item:hover {
-    transform: translateY(-10px);
+    transform: translateX(-30px);
 }
 
-.icon {
+.service-item img {
+    height: 50px;
+    width: 50px;
     background-color: rgb(240,158,48);
-    border-radius: 20px;
-    margin-right: 20px;
+    border-radius: 50%;
     padding: 10px;
-    font-size: 2rem;
-    color: rgb(240,158,48); /* Color del ícono */
+    margin-right: 30px;
 }
 
-.service-info h3 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-    color: rgb(240,158,48); /* Color del título del servicio */
+.service-details {
+    display: flex;
+    flex-direction: column;
 }
 
-.service-info p {
-    color: white;
-    font-size: 1rem;
+.service-item h3 {
+    font-size: 1.6rem;
+    margin-bottom: 5px;
+    color: rgb(240,158,48);
+}
+
+.service-item p {
+    font-size: 1.1rem;
     margin: 0;
 }
-
 
 #skillyexp{
     padding: 20px;
