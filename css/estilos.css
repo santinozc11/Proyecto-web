@@ -22,12 +22,16 @@ header {
     align-items: center; 
 }
 
-
+.header-elements h2{
+    color: rgb(240,158,48);
+    margin-left: 30px;
+    font-size: 30px;
+}
 nav a {
     top: 10px;
     width: 100%;
     padding-right: 30px;
-    color: rgb(87,87,87);
+    color: rgb(114,114,114);
     text-decoration: none;
 }
 
@@ -36,12 +40,14 @@ nav a:hover{
 }
 
 .contact-button{
+    font-weight: bold;
     background-color: rgb(27,27,27); 
-    color: rgb(87,87,87); 
+    color: rgb(114,114,114); 
     border-color:  rgb(240,158,48);
     border-radius: 50px; 
-    padding: 10px 30px;
+    padding: 10px 50px 10px 40px;
     cursor: pointer;
+    margin-right: 50px;
 }
 
 .contact-button:hover {
@@ -53,19 +59,24 @@ nav a:hover{
 }
 
 #hero {
+    position: relative;
     display: flex;
     max-width: 1200px;
     justify-content: space-between;
-    padding: 40px 0px;
-    grid-template-columns: auto;
+    padding: 50px 0px;
 }
 
+.hero-content{
+    position: relative;
+    display: flex;
+    z-index: 1;
+    
+}
 .hero-text {
-    align-items: left;
-    padding: 150px 150px;
+    width: 900px;
+    padding: 100px 250px 100px 110px;
     background-color: #292929;
-    border-radius: 0px 300px 300px 0px;
-
+    border-radius: 0px 250px 250px 0px;
 }
 
 .hero-text h1 {
@@ -82,17 +93,18 @@ nav a:hover{
 }
 
 .hero-text p {
-    color: rgb(187, 185, 185); 
+    color: rgb(114,114,114); 
     font-size: 20px;
-    margin: 20px 0;
+    margin: 10px 10px 40px 10px;
 }
 
 .hero-text button {
     font-weight: bold;
-    background-color: rgb(240,158,48);
+    background-color: rgb(240,151,51);
     color:  rgb(27,27,27);
     border: none;
     padding: 15px 30px;
+    margin-left: 10px;
     font-size: 1em;
     cursor: pointer;
     border-radius: 20px;
@@ -105,38 +117,18 @@ nav a:hover{
 
 .hero-img {
     position: relative;
-    max-width: 50%;
-    text-align: center;
+    max-width: 100%;
+    height: 100%;
 }
 
 .hero-img img {
-    width: 100%;
-    border-radius: 20px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-}
-
-.hero-img::before {
-    content: '';
-    position: absolute;
-    top: 10%;
-    left: -20px;
-    width: 100px;
-    height: 100px;
-    background-color: #ffcc00;
-    border-radius: 50%;
-    z-index: -1;
-}
-
-.hero-img::after {
-    content: '';
-    position: absolute;
-    bottom: 10%;
-    right: -20px;
-    width: 100px;
-    height: 100px;
-    background-color: #ffcc00;
-    border-radius: 50%;
-    z-index: -1;
+    background-color: #e67e22;
+    position: relative;
+    width: 400px;
+    right: -300px;
+    bottom: -20px;
+    border-radius: 80px;
+    animation: animate 10s linear infinite;
 }
 
 .checkout{
@@ -156,18 +148,16 @@ nav a:hover{
 }
 
 #services {
-    align-items: center;
     padding: 150px;
     display: flex;
-    gap: 50px;
-    max-width: 1200px;
+    gap: 200px;
+    max-width: 2000px;
     width: 100%;
 }
 
 .services-content{
+    left: -20px;
     border: white;
-    text-align: left;
-    max-width: 800px;
 }
 
 .services-content h1 {
