@@ -56,7 +56,7 @@ nav a:hover{
 }
 .title{
     color: rgb(240,158,48);
-    font-size: 50px;
+    font-size: 70px;
 }
 
 #hero {
@@ -243,22 +243,96 @@ nav a:hover{
     margin: 0;
 }
 
-#skillyexp{
-    padding: 20px;
+
+#skillyexp {
+    display: flex;
+    flex-direction: column;
     align-items: center;
+    padding: 50px 20px;
+}
+
+#skillyexp p {
+    padding: 20px;
+    text-align: center;
+    font-size: 1.3em;
+    color: #bbb;
+    margin-bottom: 40px;
+}
+
+.skillyexp-content {
+    padding: 20px;
     display: flex;
     justify-content: space-between;
-    gap: 50px;
-    max-width: 1200px;
-    width: 100%;
+    flex-wrap: wrap;
 }
 
-
-.skillyexp-content{
-    border: white;
-    text-align: left;
-    max-width: 800px;
+.skills, .experience {
+    flex: 1;
+    margin: 0 100px;
 }
+
+.skills h2, .experience h2 {
+    font-size: 40px;
+    color: rgb(240,158,48);
+    margin-top: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.skills-grid, .experience-grid {
+    display: grid;
+    gap: 20px;
+}
+
+.skills-grid {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.experience-grid {
+    grid-row: auto;
+}
+
+.skill-item, .exp-item {
+    text-align: center;
+    padding: 20px;
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+.skill-item:hover, .exp-item:hover {
+    transform: translateY(-10px);
+}
+
+.skill-item img {
+    height: 50px;
+    width: 50px;
+    margin-bottom: 10px;
+    background-color: rgb(240,158,48);
+    border-radius: 50%;
+    padding: 10px;
+
+}
+
+.skill-details h3 {
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+}
+
+.exp-item{
+    justify-content: center;
+    display: flex;
+}
+.exp-item p {
+    font-size: 18px;
+    color: #bbb;
+}
+
+.exp-item h3 {
+    margin: 20px 20px;
+    font-size: 24px;
+    color: #fff;
+}
+
 footer {
     background-color: #1a1a1a;
     padding: 40px 0;
