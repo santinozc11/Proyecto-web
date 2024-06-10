@@ -83,7 +83,7 @@ nav a:hover{
 .hero-text h1 {
     font-size: 100px;
     color: #fffcfcea;
-    line-height: 1.2;
+    line-height: 1.0;
 }
 
 .hero-text h1 span {
@@ -96,7 +96,7 @@ nav a:hover{
 .hero-text p {
     color: rgb(114,114,114); 
     font-size: 20px;
-    margin: 10px 10px 40px 10px;
+    margin: 30px 0px 60px 10px;
 }
 
 .hero-text button {
@@ -218,12 +218,12 @@ nav a:hover{
     transform: translateX(-30px);
 }
 
+
+
 .service-item img {
-    height: 50px;
-    width: 50px;
     background-color: rgb(240,158,48);
     border-radius: 50%;
-    padding: 10px;
+    padding: 15px;
     margin-right: 30px;
 }
 
@@ -304,12 +304,10 @@ nav a:hover{
 }
 
 .skill-item img {
-    height: 50px;
-    width: 50px;
     margin-bottom: 10px;
     background-color: rgb(240,158,48);
-    border-radius: 50%;
-    padding: 10px;
+    padding: 15px;
+    border-radius: 70%;
 
 }
 
@@ -323,7 +321,7 @@ nav a:hover{
     display: flex;
 }
 .exp-item p {
-    font-size: 18px;
+    font-size: 24px;
     color: #bbb;
 }
 
@@ -401,14 +399,6 @@ nav a:hover{
     flex-direction: column;
     align-items: center;
     padding: 80px 10px;
-}
-
-#testimonial p {
-    padding: 20px;
-    text-align: center;
-    font-size: 1.9em;
-    color: rgb(240,158,48);
-    margin-bottom: 10px;
 }
 
 .testimonial-container {
