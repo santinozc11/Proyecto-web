@@ -648,7 +648,6 @@ footer{
 /* Responsive */
 
 @media (max-width: 320px) {
-
     .hero-text h1 {
         font-size: 24px;
     }
@@ -677,10 +676,12 @@ footer{
     .about-text p {
         font-size: 16px;
     }
-    .service-item{
+
+    .service-item {
         padding: 8px;
         margin: 0px;
     }
+
     .skill-item,
     .exp-item {
         padding: 8px;
@@ -703,11 +704,10 @@ footer{
         max-width: 100%;
         text-align: center;
     }
-
 }
 
+/* Para tamaños de pantalla entre 321px y 480px */
 @media (min-width: 321px) and (max-width: 480px) {
-
     .hero-text h1 {
         font-size: 28px;
     }
@@ -736,6 +736,7 @@ footer{
     .about-text p {
         font-size: 18px;
     }
+
     .stats h3 {
         font-size: 20px;
     }
@@ -744,10 +745,11 @@ footer{
         font-size: 14px;
     }
 
-    .service-item{
+    .service-item {
         padding: 10px;
         margin: 0px;
     }
+
     .skill-item,
     .exp-item {
         padding: 10px;
@@ -769,11 +771,10 @@ footer{
         max-width: 100%;
         text-align: center;
     }
-
 }
 
+/* Para tamaños de pantalla entre 481px y 768px */
 @media (min-width: 481px) and (max-width: 768px) {
-
     .header-elements {
         flex-direction: column;
         align-items: center;
@@ -847,11 +848,10 @@ footer{
         max-width: 100%;
         text-align: center;
     }
-
 }
 
+/* Para tamaños de pantalla entre 769px y 1024px */
 @media (min-width: 769px) and (max-width: 1024px) {
-
     .hero-text h1 {
         font-size: 36px;
     }
@@ -889,7 +889,7 @@ footer{
         font-size: 18px;
     }
 
-    .service-item{
+    .service-item {
         padding: 12px;
         margin: 0px;
     }
@@ -915,11 +915,10 @@ footer{
         max-width: 100%;
         text-align: center;
     }
-
 }
 
+/* Para tamaños de pantalla entre 1025px y 1280px */
 @media (min-width: 1025px) and (max-width: 1280px) {
-
     .hero-text h1 {
         font-size: 40px;
     }
@@ -956,14 +955,14 @@ footer{
         font-size: 20px;
     }
 
-    .service-item{
+    .service-item {
         padding: 14px;
         margin: 0px;
     }
     .skill-item,
     .exp-item {
         padding: 14px;
-        margin: 8px;
+        margin: 5px;
     }
 
     .service-item img,
@@ -982,9 +981,7 @@ footer{
         max-width: 100%;
         text-align: center;
     }
-
 }
-
 @media (min-width: 1281px) and (max-width: 1440px) {
 
     .hero-text h1 {
@@ -995,6 +992,9 @@ footer{
         font-size: 24px;
     }
 
+    .hero-img img {
+        right: -100px;
+    }
     #about {
         margin-top: 110px;
         padding: 100px 0;
@@ -1045,7 +1045,11 @@ footer{
     .testimonial-card {
         width: 95%;
     }
-
+    .projects-navigation ,.dots-container {
+        margin-right: 450px; /
+    }
+    
+    .p
     .footer-content {
         max-width: 100%;
         text-align: center;
@@ -1119,5 +1123,4 @@ footer{
         max-width: 100%;
         text-align: center;
     }
-  
 }
