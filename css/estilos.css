@@ -10,6 +10,7 @@ body{
     background-color: rgb(27,27,27);
 }
 
+/* Header */
 header {
     padding: 20px 50px; 
     text-align: center;
@@ -59,6 +60,7 @@ nav a:hover{
     font-size: 70px;
 }
 
+/* Hero */
 #hero {
     position: relative;
     display: flex;
@@ -81,7 +83,7 @@ nav a:hover{
 }
 
 .hero-text h1 {
-    font-size: 100px;
+    font-size: 2.5em;
     color: #fffcfcea;
     line-height: 1.0;
 }
@@ -132,6 +134,7 @@ nav a:hover{
     animation: animate 10s linear infinite;
 }
 
+/* Checkout */
 .checkout{
     color: #fff3f3d7;
     padding: 90px;
@@ -148,7 +151,11 @@ nav a:hover{
     border-radius: 30px;
 }
 
+.checkout-img a :hover{
+    background-color: #fff;
+}
 
+/* Servicios */
 #services {
     display: flex;
     justify-content: space-between;
@@ -219,7 +226,6 @@ nav a:hover{
 }
 
 
-
 .service-item img {
     background-color: rgb(240,158,48);
     border-radius: 50%;
@@ -243,6 +249,7 @@ nav a:hover{
     margin: 0;
 }
 
+/* Habilidades y Experiencia */
 
 #skillyexp {
     display: flex;
@@ -252,11 +259,11 @@ nav a:hover{
 }
 
 #skillyexp p {
-    padding: 20px;
+    padding: 30px;
     text-align: center;
     font-size: 1.3em;
     color: #bbb;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
 
 .skillyexp-content {
@@ -332,7 +339,7 @@ nav a:hover{
 }
 
 
-
+/* Proyectos */
 #projects {
         display: flex;
         flex-direction: column;
@@ -396,6 +403,7 @@ nav a:hover{
     text-decoration: underline;
 }
 
+/* Testimonios */
 #testimonial {
     display: flex;
     flex-direction: column;
@@ -451,21 +459,26 @@ nav a:hover{
     background-color: rgb(240,158,48);
 }
 
+
+/* Footer */
+
 footer{
-    display: flex;
-    justify-content: space-between;
-    color: white;
-    padding: 50px 120px;
-    align-items: center;
+    padding: 80px 0px;
+    background-color: #292929;
 }
+
 
 .footer-content {
     margin-left: 120px;
-    max-width: 40%;
+    max-width: 1200px;
+}
+
+.footer-row{
     display: flex;
-    justify-content: space-between;
+    flex-wrap: nowrap;
     align-items: center;
 }
+
 .footer-content h1{
     font-size: 70px;
     margin-bottom: 30px;
@@ -482,9 +495,6 @@ footer{
 
 #contact-list{
     margin-right: 150px;
-    display: flex;
-    flex-direction: column;
-
 }
 
 
@@ -511,6 +521,7 @@ footer{
 
 
 .contact-item h3 {
+    text-align: left;
     font-size: 1.6rem;
     margin-bottom: 5px;
     color: rgb(240,158,48);
@@ -525,17 +536,11 @@ footer{
     padding: 15px;
 }
 
-.right-section {
-    display: flex;
-    justify-content: space-between;
+.quick-links{
     margin-left: 150px;
 }
 
-.quick-links, .servicesfo {
-    margin-right: 40px;
-}
-
-.quick-links h3, .servicesfo h3 {
+.quick-links h3{
     white-space: nowrap;
     color: rgb(240,158,48);
     font-size: 22px;
@@ -543,7 +548,7 @@ footer{
 
 }
 
-.quick-links ul, .servicesfo ul{
+.quick-links ul{
     color: white;
     list-style: none;
     padding: 0;
@@ -554,16 +559,19 @@ footer{
     color: white;
 }
 
-.quick-links a:hover, .servicesfo a:hover{
+.quick-links a:hover{
     color: rgb(240,158,48);
 }
 
-.quick-links li, .servicesfo li {
-    margin-bottom: 10px;
+.quick-links li{
+    margin-bottom: 20px;
     font-size: 22px;
 }
 
+/* Responsive */
+
 @media (max-width: 320px) {
+
     .hero-text h1 {
         font-size: 24px;
     }
@@ -572,22 +580,34 @@ footer{
         font-size: 14px;
     }
 
-    .service-item, .skill-item, .exp-item {
+    .service-item,
+    .skill-item,
+    .exp-item {
         padding: 8px;
         margin: 5px;
     }
 
-    .service-item img, .skill-item img, .exp-item img {
+    .service-item img,
+    .skill-item img,
+    .exp-item img {
         width: 30px;
         height: 30px;
     }
 
-    .project-card, .testimonial-card {
+    .project-card,
+    .testimonial-card {
         width: 100%;
     }
+
+    .footer-content {
+        max-width: 100%;
+        text-align: center;
+    }
+
 }
 
-@media (max-width: 480px) {
+@media (min-width: 321px) and (max-width: 480px) {
+
     .hero-text h1 {
         font-size: 28px;
     }
@@ -604,22 +624,33 @@ footer{
         font-size: 14px;
     }
 
-    .service-item, .skill-item, .exp-item {
+    .service-item,
+    .skill-item,
+    .exp-item {
         padding: 10px;
         margin: 5px;
     }
 
-    .service-item img, .skill-item img, .exp-item img {
+    .service-item img,
+    .skill-item img,
+    .exp-item img {
         width: 40px;
         height: 40px;
     }
 
-    .project-card, .testimonial-card {
+    .project-card,
+    .testimonial-card {
         width: 100%;
     }
+    .footer-content {
+        max-width: 100%;
+        text-align: center;
+    }
+
 }
 
-@media (max-width: 768px) {
+@media (min-width: 481px) and (max-width: 768px) {
+
     .header-elements {
         flex-direction: column;
         align-items: center;
@@ -655,26 +686,29 @@ footer{
         margin: 10px;
     }
 
-    .services-list, .skills-grid, .experience-grid, .projects-container, .testimonial-container {
+    .services-list,
+    .skills-grid,
+    .experience-grid,
+    .projects-container,
+    .testimonial-container {
         flex-direction: column;
         align-items: center;
     }
 
-    .project-card, .testimonial-card {
+    .project-card,
+    .testimonial-card {
         width: 80%;
     }
 
     .footer-content {
-        flex-direction: column;
-        align-items: center;
+        max-width: 100%;
+        text-align: center;
     }
 
-    .footer-content .left-section, .footer-content .right-section {
-        margin: 20px 0;
-    }
 }
 
-@media (max-width: 1024px) {
+@media (min-width: 769px) and (max-width: 1024px) {
+
     .hero-text h1 {
         font-size: 36px;
     }
@@ -691,22 +725,34 @@ footer{
         font-size: 18px;
     }
 
-    .service-item, .skill-item, .exp-item {
+    .service-item,
+    .skill-item,
+    .exp-item {
         padding: 12px;
         margin: 5px;
     }
 
-    .service-item img, .skill-item img, .exp-item img {
+    .service-item img,
+    .skill-item img,
+    .exp-item img {
         width: 50px;
         height: 50px;
     }
 
-    .project-card, .testimonial-card {
+    .project-card,
+    .testimonial-card {
         width: 90%;
     }
+
+    .footer-content {
+        max-width: 100%;
+        text-align: center;
+    }
+
 }
 
-@media (max-width: 1280px) {
+@media (min-width: 1025px) and (max-width: 1280px) {
+
     .hero-text h1 {
         font-size: 40px;
     }
@@ -723,22 +769,34 @@ footer{
         font-size: 20px;
     }
 
-    .service-item, .skill-item, .exp-item {
+    .service-item,
+    .skill-item,
+    .exp-item {
         padding: 14px;
         margin: 8px;
     }
 
-    .service-item img, .skill-item img, .exp-item img {
+    .service-item img,
+    .skill-item img,
+    .exp-item img {
         width: 60px;
         height: 60px;
     }
 
-    .project-card, .testimonial-card {
+    .project-card,
+    .testimonial-card {
         width: 95%;
     }
+
+    .footer-content {
+        max-width: 100%;
+        text-align: center;
+    }
+
 }
 
-@media (max-width: 1440px) {
+@media (min-width: 1281px) and (max-width: 1440px) {
+
     .hero-text h1 {
         font-size: 44px;
     }
@@ -755,22 +813,34 @@ footer{
         font-size: 22px;
     }
 
-    .service-item, .skill-item, .exp-item {
+    .service-item,
+    .skill-item,
+    .exp-item {
         padding: 16px;
         margin: 10px;
     }
 
-    .service-item img, .skill-item img, .exp-item img {
+    .service-item img,
+    .skill-item img,
+    .exp-item img {
         width: 70px;
         height: 70px;
     }
 
-    .project-card, .testimonial-card {
-        width: 100%;
+    .project-card,
+    .testimonial-card {
+        width: 95%;
     }
+
+    .footer-content {
+        max-width: 100%;
+        text-align: center;
+    }
+
 }
 
-@media (max-width: 1920px) {
+@media (min-width: 1441px) {
+
     .hero-text h1 {
         font-size: 48px;
     }
@@ -787,17 +857,29 @@ footer{
         font-size: 24px;
     }
 
-    .service-item, .skill-item, .exp-item {
+    .service-item,
+    .skill-item,
+    .exp-item {
         padding: 18px;
         margin: 12px;
     }
 
-    .service-item img, .skill-item img, .exp-item img {
+    .service-item img,
+    .skill-item img,
+    .exp-item img {
         width: 80px;
         height: 80px;
     }
 
-    .project-card, .testimonial-card {
-        width: 100%;
+    .project-card,
+    .testimonial-card {
+        width: 95%;
     }
+
+
+    .footer-content {
+        max-width: 100%;
+        text-align: center;
+    }
+  
 }
