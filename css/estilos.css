@@ -131,8 +131,42 @@ nav a:hover{
     right: -300px;
     bottom: -20px;
     border-radius: 80px;
-    animation: animate 10s linear infinite;
 }
+
+/* Sobre Mí */
+#about {
+    margin-top: 90px;
+    padding: 80px 0;
+    background-color: #292929;
+    text-align: center;
+}
+
+.about-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.about-text {
+    background-color: #494848;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.about-text:hover {
+    transform: translateY(-5px);
+}
+
+.about-text h1{
+    margin-bottom: 20px;
+}
+.about-text p {
+    color: white;
+    font-size: 20px;
+    line-height: 1.5;
+}
+
 
 /* Checkout */
 .checkout{
@@ -140,10 +174,15 @@ nav a:hover{
     padding: 90px;
     display: flex;
     align-items: center; 
+    position: relative;
+}
+.checkout p{
+    font-size: 20px;
 }
 
 .checkout-img{
     padding: 2px 20px;
+    position: relative;
 }
 .checkout-img img{
     background-color: #fff3f3d7;
@@ -263,7 +302,6 @@ nav a:hover{
     text-align: center;
     font-size: 1.3em;
     color: #bbb;
-    margin-bottom: 20px;
 }
 
 .skillyexp-content {
@@ -296,7 +334,7 @@ nav a:hover{
 }
 
 .experience-grid {
-    grid-template-rows: repeat(3,120px);
+    grid-template-rows: repeat(3,110px);
 }
 
 .skill-item, .exp-item {
@@ -322,19 +360,31 @@ nav a:hover{
     color: rgb(255, 255, 255);
 }
 
-.exp-item{
-    justify-content: center;
+.exp-item {
+    align-items: center;
     display: flex;
+    text-align: center;
+    padding: 20px;
+    border-radius: 8px;
+    transition: transform 0.3s;
+    border-top: 2px solid rgb(255, 255, 255); 
+    border-bottom: 2px solid rgb(255, 255, 255); 
+    margin: 20px 0; 
 }
-.exp-item p {
-    white-space: nowrap;
-    font-size: 24px;
-    color: #bbb;
+.exp-item:hover {
+    transform: translateY(-10px);
 }
 
 .exp-item h3 {
     white-space: nowrap;
     font-size: 24px;
+    color: #fff;
+}
+
+.exp-item h4 {
+    white-space: nowrap;
+    font-size: 18px;
+    margin-right: 20px;
     color: #fff;
 }
 
@@ -357,7 +407,7 @@ nav a:hover{
 
 .project-card {
     background-color: #fff;
-    border-radius: 10px;
+    border-radius: 30px;
     overflow: hidden;
     transition: transform 0.3s ease;
     height: 40vh;
@@ -374,8 +424,16 @@ nav a:hover{
 }
 
 .projects-navigation {
-    margin-top: 70px;
+    margin-left: auto;
+    margin-top: 60px;
+    display: flex;
+    align-items: center;
+}
 
+.projects-navigation .dots-container {
+    display: flex;
+    align-items: center;
+    margin-right: 680px; /
 }
 
 .projects-navigation .dot {
@@ -392,9 +450,8 @@ nav a:hover{
 }
 
 .projects-navigation .view-all {
-    display: inline-block;
-    margin-left: 20px;
-    color:rgb(240,158,48);
+    color: rgb(240,158,48);
+    margin-right: 40px;
     text-decoration: none;
     font-weight: bold;
 }
@@ -425,7 +482,7 @@ nav a:hover{
 
 .testimonial-card {
     background-color: #fff;
-    border-radius: 10px;
+    border-radius: 30px;
     overflow: hidden;
     transition: transform 0.3s ease;
     margin-bottom: 20px;
@@ -464,19 +521,39 @@ nav a:hover{
 
 footer{
     padding: 80px 0px;
-    background-color: #292929;
+    background-color: rgba(41, 41, 41, 0.8);
+}
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
+@keyframes scaleIn {
+    from {
+        transform: scale(0.5);
+    }
+    to {
+        transform: scale(1);
+    }
+}
 
 .footer-content {
     margin-left: 120px;
     max-width: 1200px;
+    animation: fadeInUp 1s ease forwards;
 }
 
 .footer-row{
     display: flex;
     flex-wrap: nowrap;
     align-items: center;
+    animation: scaleIn 1s ease forwards;
 }
 
 .footer-content h1{
@@ -580,7 +657,30 @@ footer{
         font-size: 14px;
     }
 
-    .service-item,
+    #about {
+        margin-top: 40px;
+        padding: 40px 0;
+    }
+
+    .about-content {
+        max-width: 100%;
+    }
+
+    .about-text {
+        padding: 20px;
+    }
+
+    .about-text h1 {
+        font-size: 30px;
+    }
+
+    .about-text p {
+        font-size: 16px;
+    }
+    .service-item{
+        padding: 8px;
+        margin: 0px;
+    }
     .skill-item,
     .exp-item {
         padding: 8px;
@@ -616,6 +716,26 @@ footer{
         font-size: 16px;
     }
 
+    #about {
+        margin-top: 50px;
+        padding: 50px 0;
+    }
+
+    .about-content {
+        max-width: 90%;
+    }
+
+    .about-text {
+        padding: 30px;
+    }
+
+    .about-text h1 {
+        font-size: 36px;
+    }
+
+    .about-text p {
+        font-size: 18px;
+    }
     .stats h3 {
         font-size: 20px;
     }
@@ -624,7 +744,10 @@ footer{
         font-size: 14px;
     }
 
-    .service-item,
+    .service-item{
+        padding: 10px;
+        margin: 0px;
+    }
     .skill-item,
     .exp-item {
         padding: 10px;
@@ -681,6 +804,26 @@ footer{
     .hero-text p {
         font-size: 18px;
     }
+    #about {
+        margin-top: 60px;
+        padding: 60px 0;
+    }
+
+    .about-content {
+        max-width: 80%;
+    }
+
+    .about-text {
+        padding: 40px;
+    }
+
+    .about-text h1 {
+        font-size: 42px;
+    }
+
+    .about-text p {
+        font-size: 20px;
+    }
 
     .checkout-img img {
         margin: 10px;
@@ -717,6 +860,27 @@ footer{
         font-size: 20px;
     }
 
+    #about {
+        margin-top: 90px;
+        padding: 80px 0;
+    }
+
+    .about-content {
+        max-width: 800px;
+    }
+
+    .about-text {
+        padding: 30px;
+    }
+
+    .about-text h1 {
+        font-size: 70px;
+    }
+
+    .about-text p {
+        font-size: 20px;
+    }
+
     .stats h3 {
         font-size: 22px;
     }
@@ -725,7 +889,10 @@ footer{
         font-size: 18px;
     }
 
-    .service-item,
+    .service-item{
+        padding: 12px;
+        margin: 0px;
+    }
     .skill-item,
     .exp-item {
         padding: 12px;
@@ -761,6 +928,26 @@ footer{
         font-size: 22px;
     }
 
+    #about {
+        margin-top: 100px;
+        padding: 90px 0;
+    }
+
+    .about-content {
+        max-width: 700px;
+    }
+
+    .about-text {
+        padding: 40px;
+    }
+
+    .about-text h1 {
+        font-size: 60px;
+    }
+
+    .about-text p {
+        font-size: 18px;
+    }
     .stats h3 {
         font-size: 24px;
     }
@@ -769,7 +956,10 @@ footer{
         font-size: 20px;
     }
 
-    .service-item,
+    .service-item{
+        padding: 14px;
+        margin: 0px;
+    }
     .skill-item,
     .exp-item {
         padding: 14px;
@@ -805,6 +995,26 @@ footer{
         font-size: 24px;
     }
 
+    #about {
+        margin-top: 110px;
+        padding: 100px 0;
+    }
+
+    .about-content {
+        max-width: 750px;
+    }
+
+    .about-text {
+        padding: 50px;
+    }
+
+    .about-text h1 {
+        font-size: 65px;
+    }
+
+    .about-text p {
+        font-size: 19px;
+    }
     .stats h3 {
         font-size: 26px;
     }
@@ -813,7 +1023,11 @@ footer{
         font-size: 22px;
     }
 
-    .service-item,
+    .service-item{
+        padding: 16px;
+        margin: 0px;
+    }
+
     .skill-item,
     .exp-item {
         padding: 16px;
@@ -849,6 +1063,27 @@ footer{
         font-size: 26px;
     }
 
+    #about {
+        margin-top: 160px;
+        padding: 110px 0;
+    }
+
+    .about-content {
+        max-width: 800px;
+    }
+
+    .about-text {
+        padding: 60px;
+    }
+
+    .about-text h1 {
+        font-size: 70px;
+    }
+
+    .about-text p {
+        font-size: 20px;
+    }
+
     .stats h3 {
         font-size: 28px;
     }
@@ -857,7 +1092,10 @@ footer{
         font-size: 24px;
     }
 
-    .service-item,
+    .service-item{
+        padding: 22px;
+        margin: 0px;
+    }
     .skill-item,
     .exp-item {
         padding: 18px;
