@@ -647,35 +647,164 @@ footer{
 
 /* Responsive */
 
-/* Para tamaños de pantalla hasta 320px */
-@media (max-width: 320px) {
+@media (max-width:320px){
+
 }
 
-/* Para tamaños de pantalla entre 321px y 480px */
-@media (min-width: 321px) and (max-width: 480px) {
+@media (max-width:480px){
+    
+}
+@media (max-width:768px){
+    
 }
 
-/* Para tamaños de pantalla entre 481px y 768px */
-@media (min-width: 481px) and (max-width: 768px) {
+@media (max-width:1024px){
+    
 }
 
-/* Para tamaños de pantalla entre 769px y 1024px */
-@media (min-width: 769px) and (max-width: 1024px) {
+@media (max-width:1280px){
+    
 }
 
-/* Para tamaños de pantalla entre 1025px y 1280px */
-@media (min-width: 1025px) and (max-width: 1280px) {
-}
-
-/* Para tamaños de pantalla entre 1281px y 1440px */
 @media (min-width: 1281px) and (max-width: 1440px) {
 
+    .hero-text h1 {
+        font-size: 44px;
+    }
+
+    .hero-text p {
+        font-size: 24px;
+    }
+
+    .hero-img img {
+        right: -100px;
+    }
+    #about {
+        margin-top: 110px;
+        padding: 100px 0;
+    }
+
+    .about-content {
+        max-width: 750px;
+    }
+
+    .about-text {
+        padding: 50px;
+    }
+
+    .about-text h1 {
+        font-size: 65px;
+    }
+
+    .about-text p {
+        font-size: 19px;
+    }
+    .stats h3 {
+        font-size: 26px;
+    }
+
+    .stats p {
+        font-size: 22px;
+    }
+
+    .service-item{
+        padding: 16px;
+        margin: 0px;
+    }
+
+    .skill-item,
+    .exp-item {
+        padding: 16px;
+        margin: 10px;
+    }
+
+    .service-item img,
+    .skill-item img,
+    .exp-item img {
+        width: 70px;
+        height: 70px;
+    }
+
+    .project-card,
+    .testimonial-card {
+        width: 95%;
+    }
+    .projects-navigation ,.dots-container {
+        margin-right: 450px; 
+    }
+    
+    .p
+    .footer-content {
+        max-width: 100%;
+        text-align: center;
+    }
+
 }
 
-/* Para tamaños de pantalla mayores o iguales a 1441px */
 @media (min-width: 1441px) {
-}
 
-/* Para tamaños de pantalla mayores o iguales a 1920px */
-@media (min-width: 1920px) {
+    .hero-text h1 {
+        font-size: 48px;
+    }
+
+    .hero-text p {
+        font-size: 26px;
+    }
+
+    #about {
+        margin-top: 160px;
+        padding: 110px 0;
+    }
+
+    .about-content {
+        max-width: 800px;
+    }
+
+    .about-text {
+        padding: 60px;
+    }
+
+    .about-text h1 {
+        font-size: 70px;
+    }
+
+    .about-text p {
+        font-size: 20px;
+    }
+
+    .stats h3 {
+        font-size: 28px;
+    }
+
+    .stats p {
+        font-size: 24px;
+    }
+
+    .service-item{
+        padding: 22px;
+        margin: 0px;
+    }
+    .skill-item,
+    .exp-item {
+        padding: 18px;
+        margin: 12px;
+    }
+
+    .service-item img,
+    .skill-item img,
+    .exp-item img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .project-card,
+    .testimonial-card {
+        width: 95%;
+    }
+
+
+    .footer-content {
+        max-width: 100%;
+        text-align: center;
+    }
 }
