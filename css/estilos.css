@@ -451,30 +451,48 @@ nav a:hover{
     background-color: rgb(240,158,48);
 }
 
+footer{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    padding: 50px 120px;
+    align-items: center;
+}
 
 .footer-content {
+    margin-left: 120px;
+    max-width: 40%;
     display: flex;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
+}
+.footer-content h1{
+    font-size: 70px;
+    margin-bottom: 30px;
+    color: rgb(240,158,48);
 }
 
-.left-section{
-    flex: 1;
-    margin: 0 100px;
-}
-
-.left-section h1{
-    margin-bottom: 50px;
-}
 .footer-content p{
-    color: #ffffff81;
+    letter-spacing: 0.1em;
+    color: rgb(187, 185, 185); 
+    font-size: 1.3rem;
+    margin-bottom: 10px;
 }
+
+
+#contact-list{
+    margin-right: 150px;
+    display: flex;
+    flex-direction: column;
+
+}
+
 
 .contact-item {
     position: relative;
     display: flex;
     align-items: center;
-    padding: 40px 40px;
+    padding: 20px 20px;
     transition: transform 0.3s;
 }
 
@@ -491,10 +509,6 @@ nav a:hover{
     margin-right: 30px;
 }
 
-.contact-details {
-    display: flex;
-    flex-direction: column;
-}
 
 .contact-item h3 {
     font-size: 1.6rem;
@@ -507,11 +521,14 @@ nav a:hover{
     margin: 0;
 }
 
+.contact-details {
+    padding: 15px;
+}
 
 .right-section {
-    padding-right: 100px;
     display: flex;
     justify-content: space-between;
+    margin-left: 150px;
 }
 
 .quick-links, .servicesfo {
@@ -519,20 +536,31 @@ nav a:hover{
 }
 
 .quick-links h3, .servicesfo h3 {
+    white-space: nowrap;
     color: rgb(240,158,48);
-    font-size: 18px;
+    font-size: 22px;
     margin-bottom: 10px;
+
 }
 
-.quick-links ul, .servicesfo ul {
+.quick-links ul, .servicesfo ul{
     color: white;
     list-style: none;
     padding: 0;
 }
 
+.quick-links a, .servicesfo a{
+    text-decoration: none;
+    color: white;
+}
+
+.quick-links a:hover, .servicesfo a:hover{
+    color: rgb(240,158,48);
+}
+
 .quick-links li, .servicesfo li {
     margin-bottom: 10px;
-    font-size: 20px;
+    font-size: 22px;
 }
 
 @media (max-width: 320px) {
